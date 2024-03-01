@@ -1,0 +1,96 @@
+""" Map leader to space ---------------------
+let mapleader=","
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+set NERDTree
+
+" Tring the new syntax
+Plug 'machakann/vim-highlightedyank'
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+
+" incremental search
+set incsearch
+set hls
+set ignorecase
+set smartcase
+set showmatch
+
+" tab and shift width
+set shiftwidth=4 tabstop=4 expandtab
+
+" cursor setting
+
+" set cursorline
+set cursorcolumn 80
+
+" line number
+set number
+set relativenumber
+
+packadd! matchit
+
+set laststatus=2
+
+set backspace=indent,eol,start
+
+
+" show partial command as you type in the last line of the screen
+set showcmd
+
+" Enable auto completion when typing TAB
+set wildmenu
+set wildmode=list:longest
+
+
+set mouse+=a
+set ruler
+set history=2000
+
+" d't understand
+set display=wrap
+
+filetype on "enable file type detection
+filetype indent on
+filetype plugin on
+
+" keybaord mappings
+" nmap Q <Nop>
+" nmap J <Nop>
+map Q gq
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=enable
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+map <leader>w <Plug>(easymotion-w)
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
