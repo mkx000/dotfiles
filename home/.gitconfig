@@ -1,0 +1,23 @@
+[user]
+	email = 3080233675@qq.com
+	name = mkx000
+	password = As15238663317
+[alias]
+	adg = log --all --decorate --graph
+	adog = log --all --decorate --oneline --graph
+	dog = log --decorate --oneline --graph
+	st = status
+[core]
+	editor = vim
+#   [credential "https://github.com"]
+# 	helper = !/usr/bin/gh auth git-credential
+[http]
+    proxy = http://myComputer:7890
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
+[sendpack]
+	sideband = false
+[credential]
+	useHttpPath = true
